@@ -1,0 +1,67 @@
+[{
+  "id": "1",
+  "name": "Squid Delicacy",
+  "description": "Delicious Squid Delicacy Description",
+  "details": "This is a delicious and simple recipe for squid. Lightly coated in sea salt and pepper seasoned flour and then fried to perfection. Perfect for a hot summer's meal served with a fresh garden salad.",
+  "image": "./images/food_Bg1.jpg",
+  "thumbnail": "./images/food1_thumb.png",
+  "price": "12.99"
+}, {
+  "id": "2",
+  "name": "Chicken Gourmet",
+  "description": "Delicious Seafood Pasta Description",
+  "details": "This is a delicious and simple recipe for chicken gourment. Lightly coated in sea salt and pepper seasoned flour and then fried to perfection. Perfect for a hot summer's meal served with a fresh garden salad.",
+  "image": "./images/food_Bg2.jpg",
+  "price": "10.99"
+}, {
+  "id": "3",
+  "name": "Steak Mignon",
+  "description": "Delicious Tender Mignon Description",
+  "details": "This is a delicious and simple recipe for steak mignon. Lightly coated in sea salt and pepper seasoned flour and then fried to perfection. Perfect for a hot summer's meal served with a fresh garden salad.",
+  "image": "./images/food_Bg3.jpg",
+  "price": "15.99"
+}]
+//  },
+//  {
+//    id: 4,
+//    name: "Chicken Curry",
+//    description: "Delicious Chicken Curry Description",
+//    image: "./images/food_Bg4.jpg",
+//    price: 8.99
+//  },
+//  {
+//    id: 5,
+//    name: "Steak & Mushroom",
+//    description: "Delicious Steak Mushroom Description",
+//    image: "./images/food_Bg5.jpg",
+//    price: 10.99
+//  },
+//  {
+//    id: 6,
+//    name: "Garlic Steak",
+//    description: "Delicious Garlic Steak Description",
+//    image: "./images/food_Bg6.jpg",
+//    price: 12.99
+//  },
+//  {
+//    id: 7,
+//    name: "Seafood Salad",
+//    description: "Delicious Seafood Salad Description",
+//    image: "./images/food_Bg7.jpg",
+//    price: 11.99
+//  },
+//  {
+//    id: 8,
+//    name: "Shrimp Tempura",
+//    description: "Delicious Shrimp Tempura Description",
+//    image: "./images/food_Bg8.jpg",
+//    price: 8.99
+//  },
+//  {
+//    id: 9,
+//    name: "Seafood Pasta",
+//    description: "Delicious Seafood Pasta Description",
+//    image: "./images/food_Bg9.jpg",
+//    price: 10.99
+//  }
+//]

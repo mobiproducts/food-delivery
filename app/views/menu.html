@@ -1,0 +1,45 @@
+<!-- Menu Grid Section -->
+<section id="menuId">
+  <div class="menu container">
+
+    <div class="row">
+      <div class="menu-outer box">
+
+        <div class="col-lg-12">
+          <h2 class="menu-text">Menu</h2>
+          <hr>
+        </div>
+
+        <div ng-repeat="dish in dishes"  class="col-lg-4 col-sm-12 col-xs-12 wow fadeInLeft animated" data-wow-delay="0.1s">
+          <div class="box_inner">
+            <div class="thumb-pad1 indent">
+              <div class="thumbnail">
+                <figure>
+                  <a ng-href="#/menu/{{dish.name}}/{{dish.id}}">
+                    <img  ng-src="{{dish.image}}" alt=""></a>
+                </figure>
+                <div class="caption">
+                  <em>{{dish.price | currency}}</em>
+                  <h3>{{dish.name}}</h3>
+                  <div>
+                    <a class="add-to-cart btn btn-danger" ng-href="#/cart">
+                      +
+                    </a>
+                  </div>
+                  <p>{{dish.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div> <!--menu-outer box container-->
+    </div> <!--row container-->
+  </div> <!--menu container-->
+
+
+</section>

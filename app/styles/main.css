@@ -1,0 +1,212 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/**{*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+/*}*/
+body {
+  padding: 0;
+  width: 100%;
+  /*background-image: url("../images/foodBg2.jpg");*/
+
+}
+.view-content{
+  /*box-sizing: border-box;*/
+  /*opacity: .85;*/
+  background-color: #959E9E;
+  margin: 10%;
+  padding: 5%;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1{
+  margin-top: 0;
+}
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-right: 0px;
+  margin-left: 0px;
+  float: right;
+}
+.footer-outer{
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.container{
+  margin-right: 0px;
+  margin-left: 0px;
+  float: right;
+  width: 100%;
+  padding-top: 30px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.navbar-icon{
+  /*text-align: center;*/
+  margin-left: 48.5%;
+  margin-right: 47%;
+
+}
+
+.cart-count{
+  text-align: center;
+}
+/* Main marketing message and order button */
+.content{
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  /*box-sizing: border-box;*/
+}
+h1 {
+  position: relative;
+}
+
+.home-overlay{
+  height: 600px;
+  background-color: rgba(0,0,0,0.4);
+  /* position: absolute; */
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  /* position: relative; */
+  /*margin-top: -48px;*/
+  position: absolute;
+}
+.header-outer{
+  padding-top: 235px;
+  text-align: center;
+}
+
+.section-header {
+  height: 600px;
+  border-bottom: 0;
+  background-image: url("../images/rs_food_Bg1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+.section-header p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+  position: relative;
+}
+
+.meal-section{
+  margin-top: 0px;
+  height: 500px;
+  background-color: white;
+}
+.meal-brand{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 29px;
+}
+.meal-outer{
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.chef-overlay{
+  height: 500px;
+  /* background-color: blue; */
+  background-color: rgba(0,0,0,0.4);
+  /* position: absolute; */
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  /* position: relative; */
+  /*margin-top: -48px;*/
+  position: absolute;
+}
+/*.chef-outer{*/
+  /*padding-top: 300px;*/
+/*}*/
+.chef-section {
+  height: 500px;
+  border-bottom: 0;
+  background-image: url("../images/chef1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+.chef-section p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+  position: relative;
+}
+.chef-outer{
+  text-align: left;
+  padding: 45px;
+  margin-left: 70%;
+}
+/*.chef-header{*/
+  /*font-size: 30px;*/
+  /*background-color: white;*/
+/*}*/
+.meal-served {
+  /*float: left;*/
+  /*/!*background-color: lightcyan;*!/*/
+  /*background-image: url("../images/meals-kitchen.jpg");*/
+  /*background-repeat: no-repeat;*/
+}
+.meal-inner{
+  padding: 50px;
+  text-align: left;
+  margin-top: 48px;
+}
+/*.meal-img{*/
+  /*height: 450px;*/
+  /*/!*background-color: lightcyan;*!/*/
+  /*background-image: url("../images/meals-kitchen.jpg");*/
+  /*background-repeat: no-repeat;*/
+/*}*/
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    /*max-width: 730px;*/
+    width: 100%;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0%;
+  }
+
+  /* Space out the masthead */
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+
+}

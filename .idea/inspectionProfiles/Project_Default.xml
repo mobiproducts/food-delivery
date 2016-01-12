@@ -1,0 +1,21 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="qkfbmki7q0fdnui7o0fbruq7rufdrsxzqufzo0vbq1osnejbqtrco0vbqzvclgvbqwu7o0nbrwhco0fbq0q7rufdrsxzqkfbc0i7rufddeisbujbqw1co0vbq25clgfbqwe7q0fdzdtbquneoztfquvflglcqufpqjtfqunqqixtqkfbbui7rufdbkisy0fbyztdqunmiiwizmlszsi6imrpc2guy3nziiwic291cmnlc0nvbnrlbnqiolsilmrpc2h7xg4gig1hcmdpbi10b3a6idewmhb4o1xufvxuzw17xg4gihrlehqtywxpz246igxlznq7xg59xg4uy2fydc1py29ue1xuicbmbg9hddogcmlnahq7xg59xg4uzglzac10by1iyxj7xg4gig1hcmdpbi10b3a6idexnxb4o1xuicbwb3npdglvbjogzml4zwq7xg4gihrvcdogmdtcbiagbgvmddogmdtcbiagd2lkdgg6idewmcu7xg4gic8qym9yzgvyoiaxchggc29sawqgz3jhetsql1xufvxuxg4ucmf0aw5nihtcbiagzmxvyxq6igxlznq7xg4gihvuawnvzgutymlkatogymlkas1vdmvycmlkzttcbiagzglyzwn0aw9uoibydgw7xg5cbn1cbi5yyxrpbmcgpibzcgfuihtcbiagzglzcgxhetogaw5saw5llwjsb2nro1xuicbwb3npdglvbjogcmvsyxrpdmu7xg4gihdpzhrooiaxljflbttcbn1cbi5yyxrpbmcgpibzcgfuomhvdmvyomjlzm9yzsxcbi5yyxrpbmcgpibzcgfuomhvdmvyih4gc3bhbjpizwzvcmuge1xuicbjb250zw50oibcilxcmjywnvwio1xuicbwb3npdglvbjogywjzb2x1dgu7xg4gignvbg9yoib5zwxsb3c7xg59xg4ixx0" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

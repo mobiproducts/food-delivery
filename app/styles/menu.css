@@ -1,0 +1,109 @@
+.menu-outer{
+  margin-top: 90px;
+  /*padding-left: 25px;*/
+}
+.menu-text{
+  text-align: center;
+}
+.thumb-pad1.indent {
+  margin-bottom: 14px;
+}
+.thumb-pad1 {
+  margin: 0 0 40px 0;
+}
+.thumb-pad1 .thumbnail {
+  position: relative;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  text-align: left;
+}
+.thumb-pad1 figure {
+  /*margin: 0 0 13px 0;*/
+  margin-right: 0%;
+  margin-left: 0%;
+  /*border-bottom: 1px solid #c5256d;*/
+  border-bottom: 1px solid orange;
+  padding: 0;
+  position: relative;
+  /*background: #c5256d;*/
+  background: lightgray;
+}
+
+/*.thumb-pad1 figure em {*/
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  /*width: 70px;*/
+  /*height: 65px;*/
+  /*text-align: center;*/
+  /*color: #ffffff;*/
+  /*font: 30px/65px 'Paytone One';*/
+  /*z-index: 1;*/
+/*}*/
+/*.thumb-pad1 figure em:after {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*content: '';*/
+  /*background: #C52576;*/
+  /*display: block;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*z-index: -1;*/
+  /*opacity: 0.6;*/
+/*}*/
+.thumb-pad1 figure:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/*.thumb-pad1 figure:hover em:after {*/
+  /*opacity: 1;*/
+  /*filter: alpha(opacity=100);*/
+  /*-webkit-transition: all 0.3s;*/
+  /*-o-transition: all 0.3s;*/
+  /*transition: all 0.3s;*/
+/*}*/
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 22px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+
+em,.add-to-cart{
+  float: right;
+}
+@media screen and (min-width:768px) {
+
+  /*.thumb-pad1 figure {*/
+    /*/!*margin: 0 0 13px 0;*!/*/
+    /*margin-left: 100%;*/
+    /*margin-right: 100%;*/
+  /*}*/
+}

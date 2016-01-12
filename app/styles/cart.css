@@ -1,0 +1,46 @@
+.cart-outer{
+  margin-top: 80px;
+}
+.order-button{
+  padding-top: 30px;
+  text-align: center;
+}
+.order-summary{
+  border-radius: 5px;
+  background-color: lightgray;
+}
+.summary-label,
+.total{
+  padding-left: 10px;
+}
+/*table{*/
+  /*border: 0;*/
+  /*border: none;*/
+  /*border-collapse: collapse;*/
+/*}*/
+.order-item,
+.delivery{
+  padding-left: 30px;
+}
+
+.subtotal,
+.delivery-fee,
+.total-price{
+  float: right;
+}
+.summary-inner{
+   /*border-collapse: collapse;*/
+
+ }
+/*.order-item,*/
+/*.delivery,*/
+/*.subtotal,*/
+/*.delivery-fee,*/
+/*.total,*/
+/*.total-price{*/
+  /*border:none;*/
+  /*border-collapse: collapse;*/
+/*}*/
+
+
+/*table td {border-collapse: collapse;}*/

@@ -1,0 +1,35 @@
+.dish{
+  margin-top: 100px;
+}
+em{
+  text-align: left;
+}
+.cart-icon{
+  float: right;
+}
+.dish-to-bar{
+  margin-top: 115px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*border: 1px solid gray;*/
+}
+
+.rating {
+  float: left;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: yellow;
+}
