@@ -1,97 +1,315 @@
+<div class="dish"></div>
 
-<!-- cart Grid Section -->
-<section id="dishId">
-  <div class="dish container">
-    <!--<div class="row">-->
-    <!--<div class="col-lg-12 text-center">-->
-    <!--<h2>Menu</h2>-->
-    <!--<hr class="star-primary">-->
-    <!--</div>-->
-    <!--</div>-->
+
+  <div class="row">
+    <div class="col-xs-offset-8 col-xs-4">
+      <ngcart-summary></ngcart-summary>
+      <a href="#/cart">
+        <img src="images/cart-icon-57x57.png" alt=""/>
+      </a>
+    </div>
+  </div>
+  <hr/>
+<div class="container">
+  <h3>Add to Cart <span>(ngcart-addtocart)</span></h3>
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+
+        <div class="image-resize">
+          <img ng-src="{{dishName.image}}" alt=""></a>
+        </div>
+
+
+
+        <h4>{{dishName.name}}</h4>
+
+        <p>{{dishName.price | currency}}</p>
+
+        <P>{{dishName.description}}</P>
+        <ngcart-addtocart  id="{{dishName.name}}" name="{{dishName.name}}" price="{{dishName.price}}" quantity="1" quantity-max="5">Add to Cart
+        </ngcart-addtocart>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h4>My Item #2</h4>
+
+        <p> $15.29</p>
+        <ngcart-addtocart id="item2" name="My Item #2" price="15.29" quantity="1" quantity-max="5">Add to Cart
+        </ngcart-addtocart>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-xs-12">
+        <h4>My Item #3</h4>
+
+        <p> $25.75</p>
+        <ngcart-addtocart id="item3" name="My Item #3" price="25.75" quantity="3" quantity-max="10">Add to Cart
+        </ngcart-addtocart>
+      </div>
+      <hr/>
+    </div>
+  </div>
+
+
+
+  <hr/>
+    <h3>Cart <span> (ngcart-cart)</span></h3>
+
+    <ngcart-cart></ngcart-cart>
+
+    <hr/>
 
     <div class="row">
-      <div class="dish-outer box">
+      <div class="col-md-12">
 
-        <div class="dish-image col-lg-6 col-sm-12 col-xs-12">
-          <img class="img-responsive wow slideInUp" src="images/food_Bg1.jpg" alt="">
-
-          <hr>
-
-        </div>
-
-        <div class="dish-description col-lg-6 col-sm-12 col-xs-12">
-
-          <div class="col-lg-6 col-sm-12 col-xs-12">
-            <div class="left box">
-              <div class="rating">
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-              </div>
-              <div class="dish-name">
-                <h3>
-                  {{dishName.name}}
-                </h3>
-              </div>
-
-            </div>
+        <h3>Checkout <span> (ngcart-checkout)</span></h3>
 
 
+        <div class="row">
+          <div class="col-xs-4">
+            <h4>service 'log'</h4>
+            <ngcart-checkout service="log">Checkout</ngcart-checkout>
           </div>
-
-          <div class="col-lg-6 col-sm-12 col-xs-12">
-            <div class="right box">
-              <div class="price"><span>{{dishName.price | currency}}</span></div>
-              <div class="add-to-cart">
-                <a class="btn btn-danger" ng-href="#/cart">+</a>
-              </div>
-            </div>
-
+          <div class="col-xs-4">
+            <h4>service 'http'</h4>
+            <ngcart-checkout service="http" settings="httpSettings">Checkout</ngcart-checkout>
           </div>
-
-          <hr>
-
-          <div class="dish-details col-lg-12 col-sm-12 col-xs-12">
-            <h3>Details</h3>
-            <hr/>
-            <div>
-              <p>
-                {{dishName.detail}}
-
-              </p>
-            </div>
-            <!--<div id="tabs-container">-->
-              <!--<ul class="tabs-menu">-->
-                <!--<li class="current"><a href="#tab-1">Details</a></li>-->
-                <!--<li><a href="tab-2">Prep</a></li>-->
-                <!--<li><a href="tab-3">Ingredients</a></li>-->
-                <!--<li><a href="tab-4">Nutrition</a></li>-->
-              <!--</ul>-->
-              <!--<div class="tab">-->
-                <!--<div id="tab-1" class="tab-content">-->
-                  <!--<p>Lorem ipsum dolor sit amet, consectetu velrdum ortor. Nullam pretium, est at congue mattis, nibh eros pharetra lectus, nec posuere libero dui consectetur arcu. Quisque convallis facilisis fermentum. Nam tincidunt, diam nec dictum mattis, nunc dolor ultrices ipsum, in mattis justo turpis nec ligula. Curabitur a ante mauris. Integer placerat imperdiet diam, facilisis pretium elit mollis pretium. Sed lobortis, eros non egestas suscipit, dui dui euismod enim, ac ultricies arcu risus at tellus. Donec imperdiet congue ligula, quis vulputate mauris ultrices non. A.</p>-->
-                <!--</div>-->
-                <!--<div id="tab-2" class="tab-content">-->
-                  <!--<p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at impis viverra. </p>-->
-
-                <!--</div>-->
-                <!--<div id="tab-3" class="tab-content">-->
-                  <!--<p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero porta. </p>-->
-                <!--</div>-->
-                <!--<div id="tab-4" class="tab-content">-->
-                  <!--<p>Proin sollicitudin tincidunt quam, in egestas dui tincidunt non. Maecenas tempus condimentum mi, sed convallis tortor iaculis eu. Cras dui dui, tempor quis tempor vitae, ullamcorper in justo. Integer et lorem diam. Quisque consequat lectus eget urna molestie pharetra. Cras risus lectus, lobortis sit amet imperdiet sit amet, eleifend a erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet ornare tellus. Pellentesque nec augue a nibh pharetra scelerisque quis sit amet felis. Nullam at enim at lacus pretium iaculis sit amet vel nunc. P cursus odio. </p>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
+          <div class="col-xs-4">
+            <h4>service 'paypal'</h4>
+            <ngcart-checkout service="paypal" settings="payPalSettings"></ngcart-checkout>
           </div>
         </div>
 
 
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="clearfix"></div>
-      </div> <!-- dish-outerbox -->
-    </div> <!--row-->
-  </div> <!--cart container-->
+
+<!--  TEMPALATES -->
+<!--  TEMPALATES -->
+<!--  TEMPALATES -->
+
+<script type="text/ng-template" id="template/ngCart/summary.html">
+  <div
+    class="row">
+
+    <div class="col-md-6">{{ ngCart.getTotalItems() }}
+      <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>
+      <br/>{{ ngCart.totalCost() | currency }}
+    </div>
+  </div>
+</script>
 
 
-</section>
+<script type="text/ng-template" id="template/ngCart/cart.html">
+  <div class="alert alert-warning" role="alert" ng-show="ngCart.getTotalItems() === 0">
+    Your cart is empty
+  </div>
+
+  <div class="table-responsive col-lg-12" ng-show="ngCart.getTotalItems() > 0">
+
+    <table class="table table-striped ngCart cart">
+
+      <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+      <tfoot>
+      <tr ng-show="ngCart.getTax()">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Tax ({{ ngCart.getTaxRate() }}%):</td>
+        <td>{{ ngCart.getTax() | currency }}</td>
+      </tr>
+      <tr ng-show="ngCart.getShipping()">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Shipping:</td>
+        <td>{{ ngCart.getShipping() | currency }}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Total:</td>
+        <td>{{ ngCart.totalCost() | currency }}</td>
+      </tr>
+      </tfoot>
+      <tbody>
+      <tr ng-repeat="item in ngCart.getCart().items track by $index">
+        <td><span ng-click="ngCart.removeItemById(item.getId())" class="glyphicon glyphicon-remove"></span></td>
+
+        <td>{{ item.getName() }}</td>
+        <td><span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}"
+                  ng-click="item.setQuantity(-1, true)"></span>&nbsp;&nbsp;
+          {{ item.getQuantity() | number }}&nbsp;&nbsp;
+          <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)"></span></td>
+        <td>{{ item.getPrice() | currency}}</td>
+        <td>{{ item.getTotal() | currency }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+</script>
+
+<script type="text/ng-template" id="template/ngCart/addtocart.html">
+  <div
+    ng-hide="attrs.id">
+    <a class="btn btn-lg btn-primary" ng-disabled="true" ng-transclude></a>
+
+  </div>
+  <div ng-show="attrs.id">
+    <div>
+        <span ng-show="quantityMax">
+            <select name="quantity" id="quantity" ng-model="q"
+                    ng-options=" v for v in qtyOpt"></select>
+        </span>
+      <a class="btn btn-sm btn-primary"
+         ng-click="ngCart.addItem(id, name, price, q, data)"
+         ng-transclude></a>
+    </div>
+    <mark ng-show="inCart()">
+      This item is in your cart. <a ng-click="ngCart.removeItemById(id)" style="cursor: pointer;">Remove</a>
+    </mark>
+  </div>
+</script>
+
+<script type="text/ng-template" id="template/ngCart/checkout.html">
+
+  <div ng-if="service=='http' || service == 'log'">
+    <button class="btn btn-primary" ng-click="checkout()" ng-disabled="!ngCart.getTotalItems()" ng-transclude>Checkout
+    </button>
+  </div>
+
+
+  <div ng-if="service=='paypal'">
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" ng-show="ngCart.getTotalItems()">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="{{ settings.paypal.business }}">
+      <input type="hidden" name="lc" value="CA">
+      <input type="hidden" name="item_name" value="{{ settings.paypal.item_name }}">
+      <input type="hidden" name="item_number" value="{{ settings.paypal.item_number }}">
+      <input type="hidden" name="amount" value="{{ ngCart.getSubTotal()}}">
+      <input type="hidden" name="currency_code" value="{{ settings.paypal.currency_code }}">
+      <input type="hidden" name="button_subtype" value="services">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="tax_rate" value="{{ ngCart.getTaxRate()}}">
+      <input type="hidden" name="shipping" value="{{ ngCart.getShipping()}}">
+      <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit"
+             alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+
+</script>
+
+
+
+
+<!--&lt;!&ndash; dish Grid Section &ndash;&gt;-->
+<!--<section id="dishId">-->
+<!--<div class="dish container">-->
+
+<!--<div class="row">-->
+<!--<div class="dish-outer box">-->
+
+<!--<div class="dish-image col-lg-6 col-sm-12 col-xs-12">-->
+<!--<img class="img-responsive wow slideInUp" src="images/food_Bg1.jpg" alt="">-->
+
+<!--<hr>-->
+
+<!--</div>-->
+
+<!--<div class="dish-description col-lg-6 col-sm-12 col-xs-12">-->
+
+<!--<div class="col-lg-6 col-sm-12 col-xs-12">-->
+<!--<div class="left box">-->
+<!--<div class="rating">-->
+<!--<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>-->
+<!--</div>-->
+<!--<div class="dish-name">-->
+<!--<h3>-->
+<!--{{dishName.name}}-->
+<!--</h3>-->
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--</div>-->
+
+<!--<div class="col-lg-6 col-sm-12 col-xs-12">-->
+<!--<div class="right box">-->
+<!--<div class="price"><span>{{dishName.price | currency}}</span></div>-->
+<!--<div class="add-to-cart">-->
+<!--<ngcart-addtocart id="{{dishName.id }}" name="{{ dishName.name }}" price="{{ dishName.price }}" quantity="1" quantity-max="3" data="dishName">-->
+
+<!--</ngcart-addtocart>-->
+<!--<a class="btn btn-danger" ng-href="#/cart">+</a>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+
+<!--<hr>-->
+
+<!--<div class="dish-details col-lg-12 col-sm-12 col-xs-12">-->
+<!--<h3>Details</h3>-->
+<!--<hr/>-->
+<!--<div>-->
+<!--<p>-->
+<!--{{dishName.detail}}-->
+
+<!--</p>-->
+<!--</div>-->
+<!--&lt;!&ndash;<div id="tabs-container">&ndash;&gt;-->
+<!--&lt;!&ndash;<ul class="tabs-menu">&ndash;&gt;-->
+<!--&lt;!&ndash;<li class="current"><a href="#tab-1">Details</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;<li><a href="tab-2">Prep</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;<li><a href="tab-3">Ingredients</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;<li><a href="tab-4">Nutrition</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;</ul>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="tab">&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="tab-1" class="tab-content">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>Lorem ipsum dolor sit amet, consectetu velrdum ortor. Nullam pretium, est at congue mattis, nibh eros pharetra lectus, nec posuere libero dui consectetur arcu. Quisque convallis facilisis fermentum. Nam tincidunt, diam nec dictum mattis, nunc dolor ultrices ipsum, in mattis justo turpis nec ligula. Curabitur a ante mauris. Integer placerat imperdiet diam, facilisis pretium elit mollis pretium. Sed lobortis, eros non egestas suscipit, dui dui euismod enim, ac ultricies arcu risus at tellus. Donec imperdiet congue ligula, quis vulputate mauris ultrices non. A.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="tab-2" class="tab-content">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at impis viverra. </p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="tab-3" class="tab-content">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>Duis egestas fermentum ipsum et commodo. Proin bibendum consectetur elit, hendrerit porta mi dictum eu. Vestibulum adipiscing euismod laoreet. Vivamus lobortis tortor a odio consectetur pulvinar. Proin blandit ornare eros dictum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur laoreet, ante aliquet molestie laoreet, lectus odio fringilla purus, id porttitor erat velit vitae mi. Nullam posuere nunc ut justo sollicitudin interdum. Donec suscipit eros nec leo condimentum fermentum. Nunc quis libero porta. </p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="tab-4" class="tab-content">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>Proin sollicitudin tincidunt quam, in egestas dui tincidunt non. Maecenas tempus condimentum mi, sed convallis tortor iaculis eu. Cras dui dui, tempor quis tempor vitae, ullamcorper in justo. Integer et lorem diam. Quisque consequat lectus eget urna molestie pharetra. Cras risus lectus, lobortis sit amet imperdiet sit amet, eleifend a erat. Suspendisse vel luctus lectus. Sed ac arcu nisi, sit amet ornare tellus. Pellentesque nec augue a nibh pharetra scelerisque quis sit amet felis. Nullam at enim at lacus pretium iaculis sit amet vel nunc. P cursus odio. </p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="clearfix"></div>-->
+<!--</div> &lt;!&ndash; dish-outerbox &ndash;&gt;-->
+<!--</div> &lt;!&ndash;row&ndash;&gt;-->
+<!--</div> &lt;!&ndash;cart container&ndash;&gt;-->
+
+
+<!--</section>-->
 

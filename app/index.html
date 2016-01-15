@@ -5,6 +5,7 @@
   <title>Food Delivery App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="images/logo-food-favicon.ico.ico" type="image/x-icon">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
@@ -43,20 +44,26 @@
         <a class="navbar-brand" href="#/">Food Delivery App</a>
 
       </div>
-      <div class="cart-icon">
-        <div class="cart-count">
-          <span>3</span>
-        </div>
+      <div class="cart-icon ngcart-cart">
+        <!--<div class="cart-count">-->
+          <!--<span>3</span>-->
+        <!--</div>-->
+ 
+
+          <ngcart-summary>
+
+          </ngcart-summary>
+
 
         <a href="#/cart">
 
-          <img src="images/cart-icon-57x57.png" alt=""/>
+        <img src="images/cart-icon-57x57.png" alt=""/>
 
-        </a>
+      </a>
       </div>
       <div class="navbar-icon" >
         <a href="#/">
-          <img class="logo-icon" src="images/foodfavicon-32x32.png" alt=""/>
+          <img class="logo-icon" src="images/logo-food-icon-32x32.png" alt=""/>
         </a>
       </div>
 
@@ -123,7 +130,7 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-encode-uri/dist/angular-encode-uri.js"></script>
-<script src="bower_components/angular-encode-uri/dist/angular-encode-uri.min.js"></script>
+<script src="bower_components/ngCart/dist/ngCart.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

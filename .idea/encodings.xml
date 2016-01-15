@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.tmp/styles/cart.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.tmp/styles/dish.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.tmp/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/directives/dishDirectives.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/menu.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/cartCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/dishCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/mainCtrl.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/menuCtrl.js" charset="UTF-8" />
@@ -24,6 +27,7 @@
     <file url="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap-theme.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower_components/bootstrap/less/tables.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/dishes.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../munchy/app/css/bootstrap.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../munchy/app/css/freelancer.css" charset="UTF-8" />

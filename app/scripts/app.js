@@ -14,6 +14,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
+    'ngCart',
     'ngTouch'
   ])
   .config(function ($routeProvider) {
@@ -35,6 +36,7 @@ angular
       })
       .when('/menu/:name/:id', {
         templateUrl: 'views/dish.html',
+        //templateUrl: 'template/ngCart/cart.html',
         controller: 'DishCtrl',
         controllerAs: 'dish'
       })

@@ -25,7 +25,7 @@ angular.module('foodDeliveryApp')
         name: "Squid Delicacy",
         description: "Delicious Squid Delicacy Description",
         detail: "This is a delicious and simple recipe for squid. Lightly coated in sea salt and pepper seasoned flour and then fried to perfection. Perfect for a hot summer's meal served with a fresh garden salad.",
-        image: "./images/food_Bg1.jpg",
+        image: "./images/md_food1.jpg",
         thumbnail: "./images/food1_thumb.png",
         price: 12.99
       }
